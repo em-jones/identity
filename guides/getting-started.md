@@ -200,7 +200,6 @@ Here are the available notifiers provided by Identity:
 | Module | Description |
 | ------ | ----------- |
 | `Identity.Notifier.Log` | Default notifier. Simply logs a message via `Logger`. Great for development use. |
-| `Identity.Notifier.Bamboo` | Email notifier using the [Bamboo](https://hexdocs.pm/bamboo/) library. Requires additional configuration. |
 | `Identity.Notifier.Swoosh` | Email notifier using the [Swoosh](https://hexdocs.pm/swoosh/) library. Requires additional configuration. |
 | `Identity.Notifier.Test` | Test notifier that sends a message to the current process when callbacks are called. Useful for testing purposes. |
 

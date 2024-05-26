@@ -39,7 +39,7 @@ defmodule Identity.Notifier do
 
   Identity also provides several notifiers for quick integration. For development and testing,
   `Identity.Notifier.Log` simply prints a log message when notifications would occur. See also
-  `Identity.Notifier.Bamboo` and `Identity.Notifier.Swoosh` for notifiers that use the most
+  `Identity.Notifier.Swoosh` for notifiers that use the most
   popular Phoenix-focused email libraries.
   """
   alias Identity.User

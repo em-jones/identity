@@ -19,7 +19,7 @@ Some of the additional nice-to-have features include:
 * Listing and deleting sessions
 * Multiple OAuth providers per user
 * Both email/password and OAuth logins for the same user
-* Out-of-the-box implementations of email notifications for [Bamboo](https://hexdocs.pm/bamboo/) and [Swoosh](https://hexdocs.pm/swoosh/)
+* Out-of-the-box implementations of email notifications for [Swoosh](https://hexdocs.pm/swoosh/)
 
 > All features are optional.
 > Integrate what you want, and ignore the rest!
@@ -44,9 +44,8 @@ end
 4. Configure the `repo` option, for example `config :identity, repo: MyApp.Repo` (see `Identity.Config`).
 5. Add Identity's provided controller actions to the application router (see `Identity.Controller`).
 6. (Optional) Install `:eqrcode` and `:nimble_totp` to support 2FA.
-7. (Optional) Install `:bamboo` or `:swoosh` to support email notifications and set the `notifier` config accordingly.
-8. (Optional) Install `:ueberauth` and any desired Ueberauth providers to support OAuth.
-9. (Optional) Add `@import "../../deps/identity/priv/static/vanilla.css";` to `app.css` to style the provided templates.
+7. (Optional) Install `:ueberauth` and any desired Ueberauth providers to support OAuth.
+8. (Optional) Add `@import "../../deps/identity/priv/static/vanilla.css";` to `app.css` to style the provided templates.
 
 Run your application with `iex -S mix phx.server` and start at [http://localhost:4000/user/new](http://localhost:4000/user/new) to create a new user and start using your Identity-enabled application.
 

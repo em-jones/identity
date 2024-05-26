@@ -42,26 +42,28 @@ defmodule Identity.MixProject do
 
   defp deps do
     [
-      {:bamboo, "~> 2.0", optional: true},
-      {:bcrypt_elixir, "~> 3.0"},
+      {:bcrypt_elixir, "~> 3.1.0"},
       {:ecto_sql, "~> 3.0"},
       {:eqrcode, "~> 0.1.10", optional: true},
       {:ex_doc, "~> 0.28", only: :dev},
       {:ex_machina, "~> 2.7.0", only: [:dev, :test]},
       {:jason, "~> 1.0", optional: true},
+      {:hackney, "~> 1.20.1"},
       {:mime, "~> 1.0 or ~> 2.0", optional: true},
       {:mix_test_watch, "~> 1.0", only: [:test], runtime: false},
       {:nimble_totp, "~> 1.0", optional: true},
-      {:phoenix, "~> 1.7", optional: true},
-      {:phoenix_ecto, "~> 4.0", optional: true},
-      {:phoenix_live_view, "~> 0.17", optional: true},
-      {:phoenix_swoosh, "~> 1.0", optional: true},
+      {:phoenix, "~> 1.7.12", optional: true},
+      {:phoenix_ecto, "~> 4.6", optional: true},
+      {:phoenix_live_view, "~> 0.20.4", optional: true},
+      {:phoenix_swoosh, "~> 1.2.1", optional: true},
+      {:phoenix_html, "~> 4.0"},
+      {:phoenix_html_helpers, "~> 1.0.1"},
       {:plug_cowboy, "~> 2.0", optional: true},
-      {:plug_crypto, "~> 2.0"},
+      {:plug_crypto, "~> 2.1.0"},
       {:postgrex, ">= 0.0.0"},
-      {:swoosh, "~> 1.4", optional: true},
-      {:ua_parser, "~> 1.8"},
-      {:ueberauth, "~> 0.10", optional: true}
+      {:swoosh, "~> 1.16.7", optional: true},
+      {:ua_parser, "~> 1.9"},
+      {:ueberauth, "~> 0.10.8", optional: true}
     ]
   end
 
