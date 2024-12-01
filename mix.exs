@@ -54,7 +54,7 @@ defmodule Identity.MixProject do
       {:nimble_totp, "~> 1.0", optional: true},
       {:phoenix, "~> 1.7.12", optional: true},
       {:phoenix_ecto, "~> 4.6", optional: true},
-      {:phoenix_live_view, "~> 0.20.4", optional: true},
+      {:phoenix_live_view, "~> 1.0.0-rc.7", optional: true},
       {:phoenix_swoosh, "~> 1.2.1", optional: true},
       {:phoenix_html, "~> 4.0"},
       {:phoenix_html_helpers, "~> 1.0.1"},
